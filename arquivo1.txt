@@ -1,0 +1,32 @@
+# Sistema de Resultado Acadêmico
+
+nome = input("Nome do aluno: ")
+ra = input("RA: ")
+
+nota1 = float(input("Nota da avaliação 1: "))
+nota2 = float(input("Nota da avaliação 2: "))
+faltas = int(input("Quantidade de faltas: "))
+
+media = nota1 + nota2 / 2
+
+print("\n--- RESULTADO DO ALUNO ---")
+print("Nome:", nome)
+print("RA:", ra)
+print("Média:", media)
+print("Faltas:", faltas)
+
+if media >= 6:
+    situacao = "APROVADO"
+else:
+    situacao = "REPROVADO"
+
+if faltas > 20:
+    situacao = "REPROVADO POR FALTAS"
+
+print("Situação:", situacao)
+
+arquivo = open("resultado.txt")
+arquivo.write(nome + " - " + ra + " - " + situacao)
+arquivo.close()
+
+print("Resultado gravado com sucesso!")

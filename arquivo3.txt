@@ -1,0 +1,12 @@
+numero = int(input("Digite o número da tabuada: "))
+
+contador = 1
+
+print("\n--- TABUADA ---")
+
+while contador <= 10:
+    resultado = numero * contador
+
+    print(numero, "x", contador, "=", resultado)
+
+print("Fim da tabuada!")

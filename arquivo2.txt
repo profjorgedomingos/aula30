@@ -1,0 +1,23 @@
+if voto >= 0 and voto <= 70:
+    print("\nVoto registrado!")
+
+    if voto == 13:
+        print("Você votou no Candidato Lula.")
+    elif voto == 22:
+        print("Você votou no Candidato Flavio Bolsonaro.")
+    elif voto == 30:
+        print("Você votou no Candidato Romeu Zema .")
+    elif voto == 55:
+        print("Você votou no Candidato Ronaldo Caiado.")
+    elif voto == 70:
+        print("Você votou no Candidato Augusto Cury.")
+    elif voto == 14:
+        print("Você votou no Candidato Renan Santos.")
+
+    elif voto == 0:
+        print("Voto Nulo.")
+    else:
+        print("Voto registrado.")
+
+else:
+    print("\nNúmero inválido!")
